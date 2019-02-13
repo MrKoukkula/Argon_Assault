@@ -3,18 +3,25 @@ using UnityEngine.SceneManagement;
 
 public class Splash_screen : MonoBehaviour
 {
+    private void Awake()
+    {
+        DontDestroyOnLoad(this.gameObject);
+    }
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        Invoke("loadGame", 5f);
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Time.time >= 4)
-        {
-            SceneManager.LoadScene(1);
-        }
+        
+    }
+
+    void loadGame()
+    {
+        SceneManager.LoadScene(1);
     }
 }

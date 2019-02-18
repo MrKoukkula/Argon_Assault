@@ -39,6 +39,7 @@ public class player : MonoBehaviour
         float pitch = pitchDueToPosition + pitchDueToControlThrow;
 
         float yawDueToPosition = transform.localPosition.x * positionYawFactor;
+        //float yawDueToPosition = xThrow * positionYawFactor;
         float yaw = yawDueToPosition;
 
         float roll = xThrow * controlRollFactor;

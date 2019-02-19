@@ -32,6 +32,8 @@ public class player : MonoBehaviour
         processRotation();
     }
 
+    
+
     private void processRotation()
     {
         float pitchDueToPosition = transform.localPosition.y * positionPitchFactor;
@@ -67,5 +69,10 @@ public class player : MonoBehaviour
 
 
         transform.localPosition = new Vector3(transform.localPosition.x, yPos, transform.localPosition.z);
+    }
+
+    void OnTriggerEnter(Collider other)
+    {
+        Debug.Log("player triggered something");
     }
 }

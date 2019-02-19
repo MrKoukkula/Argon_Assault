@@ -4,7 +4,16 @@ public class soundManager : MonoBehaviour
 {
     private void Awake()
     {
-        DontDestroyOnLoad(this.gameObject);
+        int numMusicPlayers = FindObjectsOfType<soundManager>().Length;
+        if (numMusicPlayers > 1)
+        {
+            Destroy(gameObject);
+        }
+        else
+        {
+            DontDestroyOnLoad(this.gameObject);
+        }
+        
     }
 
 }

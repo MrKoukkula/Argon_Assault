@@ -2,21 +2,24 @@
 using UnityEngine;
 using UnityStandardAssets.CrossPlatformInput;
 
-public class player : MonoBehaviour
+public class PlayerController : MonoBehaviour
 {
-
+    [Header("General")]
     [Tooltip("In ms^-1")] [SerializeField] float Speed = 4f;
     [SerializeField] float xRange = 4f;
     [SerializeField] float yRange = 2.4f;
 
+    [Header("Screen-position Based")]
     [SerializeField] float positionPitchFactor = -10f;
     [SerializeField] float controlPitchFactor = -20f;
 
+    [Header("Control-Throw Based")]
     [SerializeField] float positionYawFactor = 8f;
 
     [SerializeField] float controlRollFactor = -20f;
 
     float xThrow, yThrow;
+    bool isPlayerAlive = true;
 
     // Start is called before the first frame update
     void Start()
@@ -27,12 +30,20 @@ public class player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        moveShipInX();
-        moveShipInY();
-        processRotation();
+        if (isPlayerAlive)
+        {
+            moveShipInX();
+            moveShipInY();
+            processRotation();
+        }
+        
     }
 
-    
+    void OnPlayerDeath() //called by CollisionHandler
+    {
+        print("controls frozen");
+        isPlayerAlive = false;
+    }
 
     private void processRotation()
     {
@@ -71,8 +82,5 @@ public class player : MonoBehaviour
         transform.localPosition = new Vector3(transform.localPosition.x, yPos, transform.localPosition.z);
     }
 
-    void OnTriggerEnter(Collider other)
-    {
-        Debug.Log("player triggered something");
-    }
+    
 }

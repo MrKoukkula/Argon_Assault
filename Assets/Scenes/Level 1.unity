@@ -196,6 +196,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deathFX: {fileID: 688416165360064280, guid: 083d76f610073284c8163801d3a8f0a9, type: 3}
+  parent: {fileID: 1832793815}
 --- !u!1 &170076733
 GameObject:
   m_ObjectHideFlags: 0
@@ -422,6 +423,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deathFX: {fileID: 688416165360064280, guid: 083d76f610073284c8163801d3a8f0a9, type: 3}
+  parent: {fileID: 1832793815}
 --- !u!1 &328130125 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1469320689751860, guid: a19af03b7c64771489f010af565cc649,
@@ -441,6 +443,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deathFX: {fileID: 688416165360064280, guid: 083d76f610073284c8163801d3a8f0a9, type: 3}
+  parent: {fileID: 1832793815}
 --- !u!1001 &418164243
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -969,6 +972,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deathFX: {fileID: 688416165360064280, guid: 083d76f610073284c8163801d3a8f0a9, type: 3}
+  parent: {fileID: 1832793815}
 --- !u!1001 &1186320065
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1377,6 +1381,36 @@ Transform:
   m_Father: {fileID: 227339872}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1832793814
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1832793815}
+  m_Layer: 0
+  m_Name: spawned at runtime
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1832793815
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1832793814}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 317.07495, y: 72.52757, z: 185.66449}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1833012108
 GameObject:
   m_ObjectHideFlags: 0
@@ -1581,6 +1615,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deathFX: {fileID: 688416165360064280, guid: 083d76f610073284c8163801d3a8f0a9, type: 3}
+  parent: {fileID: 1832793815}
 --- !u!1 &1910544303
 GameObject:
   m_ObjectHideFlags: 0
@@ -1681,7 +1716,7 @@ Transform:
   m_GameObject: {fileID: 688416164595071254}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.01, y: 0.05, z: -1.86}
-  m_LocalScale: {x: 0.58841836, y: 0.58841836, z: 0.58841836}
+  m_LocalScale: {x: 5, y: 5, z: 5}
   m_Children: []
   m_Father: {fileID: 1824592685}
   m_RootOrder: 2
@@ -6596,6 +6631,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deathFX: {fileID: 688416165360064280, guid: 083d76f610073284c8163801d3a8f0a9, type: 3}
+  parent: {fileID: 1832793815}
 --- !u!1001 &5645607656733337951
 PrefabInstance:
   m_ObjectHideFlags: 0

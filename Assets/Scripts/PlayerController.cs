@@ -39,7 +39,7 @@ public class PlayerController : MonoBehaviour
         
     }
 
-    void OnPlayerDeath() //called by CollisionHandler
+    void OnPlayerDeath() //called by CollisionHandler. SendMessage can only be called by scripts on the same gameobject.
     {
         print("controls frozen");
         isPlayerAlive = false;

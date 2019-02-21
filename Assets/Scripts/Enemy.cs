@@ -7,6 +7,7 @@ public class Enemy : MonoBehaviour
     Collider enemyBoxCollider;
     [SerializeField] GameObject deathFX;
     [SerializeField] Transform parent;
+    [SerializeField] int enemyScore = 12;
     // Start is called before the first frame update
     void Start()
     {
@@ -25,5 +26,8 @@ public class Enemy : MonoBehaviour
         GameObject fx = Instantiate(deathFX, transform.position, Quaternion.identity);
         fx.transform.parent = parent;
         Destroy(gameObject);
+
     }
+
+    
 }

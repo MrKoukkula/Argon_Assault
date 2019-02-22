@@ -8,6 +8,7 @@ public class Enemy : MonoBehaviour
     [SerializeField] GameObject deathFX;
     [SerializeField] Transform parent;
     [SerializeField] int enemyScore = 12;
+    [SerializeField] int hitPoints = 100;
 
     ScoreBoard scoreBoard;
 
@@ -26,11 +27,16 @@ public class Enemy : MonoBehaviour
 
     private void OnParticleCollision(GameObject other)
     {
-        scoreBoard.addToScoreBoard(enemyScore);
-        print(gameObject.name +" was hit by a bullet!");
-        GameObject fx = Instantiate(deathFX, transform.position, Quaternion.identity);
-        fx.transform.parent = parent;
-        Destroy(gameObject);
+        hitPoints--;
+        if (hitPoints <= 0)
+        {
+            scoreBoard.addToScoreBoard(enemyScore);
+            print(gameObject.name + " was hit by a bullet!");
+            GameObject fx = Instantiate(deathFX, transform.position, Quaternion.identity);
+            fx.transform.parent = parent;
+            Destroy(gameObject);
+        }
+        
 
     }
 

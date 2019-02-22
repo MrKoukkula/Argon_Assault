@@ -9,6 +9,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float xRange = 4f;
     [SerializeField] float yRange = 2.4f;
 
+    [Header("Weapons")] [SerializeField] GameObject[] guns;
+
     [Header("Screen-position Based")]
     [SerializeField] float positionPitchFactor = -10f;
     [SerializeField] float controlPitchFactor = -20f;
@@ -20,6 +22,7 @@ public class PlayerController : MonoBehaviour
 
     float xThrow, yThrow;
     bool isPlayerAlive = true;
+
 
     // Start is called before the first frame update
     void Start()
@@ -35,8 +38,27 @@ public class PlayerController : MonoBehaviour
             moveShipInX();
             moveShipInY();
             processRotation();
+            processFiring();
         }
         
+    }
+
+    private void processFiring()
+    {
+        if (CrossPlatformInputManager.GetButton("Fire1"))
+        {
+            //print("Firing");
+            foreach (GameObject gun in guns)
+            {
+                gun.SetActive(true);
+            }
+        } else
+        {
+            foreach (GameObject gun in guns)
+            {
+                gun.SetActive(false);
+            }
+        }
     }
 
     void OnPlayerDeath() //called by CollisionHandler. SendMessage can only be called by scripts on the same gameobject.

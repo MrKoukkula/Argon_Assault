@@ -198,6 +198,7 @@ MonoBehaviour:
   deathFX: {fileID: 688416165360064280, guid: 083d76f610073284c8163801d3a8f0a9, type: 3}
   parent: {fileID: 1832793815}
   enemyScore: 12
+  hitPoints: 10
 --- !u!1 &170076733
 GameObject:
   m_ObjectHideFlags: 0
@@ -426,6 +427,13 @@ MonoBehaviour:
   deathFX: {fileID: 688416165360064280, guid: 083d76f610073284c8163801d3a8f0a9, type: 3}
   parent: {fileID: 1832793815}
   enemyScore: 12
+  hitPoints: 10
+--- !u!1 &321534113 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 869227781, guid: fd234679e1e4f794086ef1b68244ea52,
+    type: 3}
+  m_PrefabInstance: {fileID: 5645607656733337951}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &328130125 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1469320689751860, guid: a19af03b7c64771489f010af565cc649,
@@ -447,6 +455,7 @@ MonoBehaviour:
   deathFX: {fileID: 688416165360064280, guid: 083d76f610073284c8163801d3a8f0a9, type: 3}
   parent: {fileID: 1832793815}
   enemyScore: 12
+  hitPoints: 10
 --- !u!1001 &418164243
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1069,6 +1078,7 @@ MonoBehaviour:
   deathFX: {fileID: 688416165360064280, guid: 083d76f610073284c8163801d3a8f0a9, type: 3}
   parent: {fileID: 1832793815}
   enemyScore: 12
+  hitPoints: 10
 --- !u!1001 &1186320065
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1281,7 +1291,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1335727033}
   m_LocalRotation: {x: -0, y: 0.3101677, z: -0, w: 0.9506819}
-  m_LocalPosition: {x: -87.29999, y: -13.1, z: -20.3}
+  m_LocalPosition: {x: -61.4, y: -13.1, z: -39.2}
   m_LocalScale: {x: 13.905999, y: 53.69246, z: 13.905999}
   m_Children: []
   m_Father: {fileID: 1631779023}
@@ -1779,6 +1789,7 @@ MonoBehaviour:
   deathFX: {fileID: 688416165360064280, guid: 083d76f610073284c8163801d3a8f0a9, type: 3}
   parent: {fileID: 1832793815}
   enemyScore: 12
+  hitPoints: 10
 --- !u!1 &1908708951
 GameObject:
   m_ObjectHideFlags: 0
@@ -1969,6 +1980,12 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1910544303}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1996633329 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6575007139441658385, guid: fd234679e1e4f794086ef1b68244ea52,
+    type: 3}
+  m_PrefabInstance: {fileID: 5645607656733337951}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &688416164595071251
 Transform:
   m_ObjectHideFlags: 0
@@ -6895,6 +6912,7 @@ MonoBehaviour:
   deathFX: {fileID: 688416165360064280, guid: 083d76f610073284c8163801d3a8f0a9, type: 3}
   parent: {fileID: 1832793815}
   enemyScore: 100
+  hitPoints: 100
 --- !u!1001 &5645607656733337951
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6999,6 +7017,14 @@ PrefabInstance:
       propertyPath: CollisionModule.collisionMessages
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 869227776, guid: fd234679e1e4f794086ef1b68244ea52, type: 3}
+      propertyPath: playOnAwake
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 869227776, guid: fd234679e1e4f794086ef1b68244ea52, type: 3}
+      propertyPath: CollisionModule.m_Bounce.scalar
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6575007139441658388, guid: fd234679e1e4f794086ef1b68244ea52,
         type: 3}
       propertyPath: CollisionModule.enabled
@@ -7024,6 +7050,28 @@ PrefabInstance:
       propertyPath: CollisionModule.collisionMessages
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6575007139441658388, guid: fd234679e1e4f794086ef1b68244ea52,
+        type: 3}
+      propertyPath: playOnAwake
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6575007139441658388, guid: fd234679e1e4f794086ef1b68244ea52,
+        type: 3}
+      propertyPath: CollisionModule.m_Bounce.scalar
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 847146728, guid: fd234679e1e4f794086ef1b68244ea52, type: 3}
+      propertyPath: guns.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 847146728, guid: fd234679e1e4f794086ef1b68244ea52, type: 3}
+      propertyPath: guns.Array.data[0]
+      value: 
+      objectReference: {fileID: 321534113}
+    - target: {fileID: 847146728, guid: fd234679e1e4f794086ef1b68244ea52, type: 3}
+      propertyPath: guns.Array.data[1]
+      value: 
+      objectReference: {fileID: 1996633329}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fd234679e1e4f794086ef1b68244ea52, type: 3}
 --- !u!4 &5999992907223145106 stripped

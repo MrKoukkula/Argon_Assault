@@ -683,7 +683,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   circuit: {fileID: 227339871}
-  lookAheadForTargetOffset: 4
+  lookAheadForTargetOffset: 2
   lookAheadForTargetFactor: 0.1
   lookAheadForSpeedOffset: 10
   lookAheadForSpeedFactor: 0.2
@@ -6657,7 +6657,7 @@ ParticleSystem:
 --- !u!199 &688416164595071253
 ParticleSystemRenderer:
   serializedVersion: 6
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -6894,7 +6894,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   deathFX: {fileID: 688416165360064280, guid: 083d76f610073284c8163801d3a8f0a9, type: 3}
   parent: {fileID: 1832793815}
-  enemyScore: 12
+  enemyScore: 100
 --- !u!1001 &5645607656733337951
 PrefabInstance:
   m_ObjectHideFlags: 0

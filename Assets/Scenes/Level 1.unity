@@ -122,7 +122,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 521296060, guid: ce15027cbd049d749a7dd8002b2c362c, type: 3}
       propertyPath: m_Name
-      value: Ship_04
+      value: enemy_1
       objectReference: {fileID: 0}
     - target: {fileID: 128710765, guid: ce15027cbd049d749a7dd8002b2c362c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -199,6 +199,44 @@ MonoBehaviour:
   parent: {fileID: 1832793815}
   enemyScore: 12
   hitPoints: 10
+--- !u!95 &128710768
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 128710766}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!320 &128710769
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 128710766}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 11400000, guid: 1e69ef14c74839e4a96609e630cfb8f9, type: 2}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings:
+  - key: {fileID: 114297226977171340, guid: 1e69ef14c74839e4a96609e630cfb8f9, type: 2}
+    value: {fileID: 128710768}
+  m_ExposedReferences:
+    m_References: []
 --- !u!1 &170076733
 GameObject:
   m_ObjectHideFlags: 0
@@ -339,7 +377,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 521296060, guid: ce15027cbd049d749a7dd8002b2c362c, type: 3}
       propertyPath: m_Name
-      value: Ship_04 (4)
+      value: enemy_5
       objectReference: {fileID: 0}
     - target: {fileID: 128710765, guid: ce15027cbd049d749a7dd8002b2c362c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -529,7 +567,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1469320689751860, guid: a19af03b7c64771489f010af565cc649, type: 3}
       propertyPath: m_Name
-      value: Ship_04 (2)
+      value: enemy_3
       objectReference: {fileID: 0}
     - target: {fileID: 4248845843280306, guid: a19af03b7c64771489f010af565cc649, type: 3}
       propertyPath: m_LocalPosition.x
@@ -991,7 +1029,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1469320689751860, guid: a19af03b7c64771489f010af565cc649, type: 3}
       propertyPath: m_Name
-      value: Ship_04 (1)
+      value: enemy_2
       objectReference: {fileID: 0}
     - target: {fileID: 4248845843280306, guid: a19af03b7c64771489f010af565cc649, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1701,7 +1739,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 521296060, guid: ce15027cbd049d749a7dd8002b2c362c, type: 3}
       propertyPath: m_Name
-      value: Ship_04 (3)
+      value: enemy_4
       objectReference: {fileID: 0}
     - target: {fileID: 128710765, guid: ce15027cbd049d749a7dd8002b2c362c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6924,6 +6962,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player ship
       objectReference: {fileID: 0}
+    - target: {fileID: 869227781, guid: fd234679e1e4f794086ef1b68244ea52, type: 3}
+      propertyPath: m_Name
+      value: Bullets right
+      objectReference: {fileID: 0}
     - target: {fileID: 1824592685, guid: fd234679e1e4f794086ef1b68244ea52, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -6968,6 +7010,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6575007139441658385, guid: fd234679e1e4f794086ef1b68244ea52,
+        type: 3}
+      propertyPath: m_Name
+      value: Bullets left
+      objectReference: {fileID: 0}
     - target: {fileID: 3861487096242346132, guid: fd234679e1e4f794086ef1b68244ea52,
         type: 3}
       propertyPath: m_IsTrigger
@@ -6987,15 +7034,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsKinematic
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 869227781, guid: fd234679e1e4f794086ef1b68244ea52, type: 3}
-      propertyPath: m_Name
-      value: Bullets right
-      objectReference: {fileID: 0}
-    - target: {fileID: 6575007139441658385, guid: fd234679e1e4f794086ef1b68244ea52,
-        type: 3}
-      propertyPath: m_Name
-      value: Bullets left
       objectReference: {fileID: 0}
     - target: {fileID: 869227776, guid: fd234679e1e4f794086ef1b68244ea52, type: 3}
       propertyPath: CollisionModule.enabled

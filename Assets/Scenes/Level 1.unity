@@ -515,7 +515,7 @@ PlayableDirector:
   serializedVersion: 3
   m_PlayableAsset: {fileID: 11400000, guid: a53eec11868bd78468db8967be88dfbf, type: 2}
   m_InitialState: 1
-  m_WrapMode: 2
+  m_WrapMode: 0
   m_DirectorUpdateMode: 1
   m_InitialTime: 0
   m_SceneBindings:
@@ -978,7 +978,7 @@ PlayableDirector:
   serializedVersion: 3
   m_PlayableAsset: {fileID: 11400000, guid: c2df695703faf3c4a8d1fc61bc02b486, type: 2}
   m_InitialState: 1
-  m_WrapMode: 2
+  m_WrapMode: 0
   m_DirectorUpdateMode: 1
   m_InitialTime: 0
   m_SceneBindings:
@@ -1050,7 +1050,7 @@ PlayableDirector:
   serializedVersion: 3
   m_PlayableAsset: {fileID: 11400000, guid: 3b6572208a16acf488d37978eb2ce321, type: 2}
   m_InitialState: 1
-  m_WrapMode: 2
+  m_WrapMode: 0
   m_DirectorUpdateMode: 1
   m_InitialTime: 0
   m_SceneBindings:
@@ -1061,6 +1061,8 @@ PlayableDirector:
   - key: {fileID: 114912737344887624, guid: 3b6572208a16acf488d37978eb2ce321, type: 2}
     value: {fileID: 0}
   - key: {fileID: 114720448091982484, guid: 3b6572208a16acf488d37978eb2ce321, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 114461923016697826, guid: 3b6572208a16acf488d37978eb2ce321, type: 2}
     value: {fileID: 0}
   m_ExposedReferences:
     m_References:
@@ -2121,7 +2123,7 @@ PlayableDirector:
   serializedVersion: 3
   m_PlayableAsset: {fileID: 11400000, guid: a53eec11868bd78468db8967be88dfbf, type: 2}
   m_InitialState: 1
-  m_WrapMode: 2
+  m_WrapMode: 0
   m_DirectorUpdateMode: 1
   m_InitialTime: 0
   m_SceneBindings:
@@ -2832,7 +2834,7 @@ PlayableDirector:
   serializedVersion: 3
   m_PlayableAsset: {fileID: 11400000, guid: 188cb61e0aff5ec4f867cacdf6464310, type: 2}
   m_InitialState: 1
-  m_WrapMode: 2
+  m_WrapMode: 0
   m_DirectorUpdateMode: 1
   m_InitialTime: 0
   m_SceneBindings:
